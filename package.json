@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-rm-console",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "plugin",
   "author": "ylc",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "plugin",
     "remove",
     "console",
-    "optimization"
+    "vite-plugin",
+    "vite-plugin-rm-console"
   ],
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
