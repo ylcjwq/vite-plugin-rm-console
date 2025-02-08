@@ -5,7 +5,13 @@
   "description": "plugin",
   "author": "ylc",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "vite",
+    "plugin",
+    "remove",
+    "console",
+    "optimization"
+  ],
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "repository": "https://github.com/ylcjwq/vite-plugin-rm-console.git",
