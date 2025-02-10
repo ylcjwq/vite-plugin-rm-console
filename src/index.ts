@@ -58,9 +58,8 @@ const processScript = (scriptContent: string, id: string) => {
  * @param options Configure options
  * @param options.include Folders included  --  Default: [ /src/ ]
  * @param options.fileRegex Files that need to be processed -- Default: /\.(?:[tj]sx?|vue)$/
- * @returns 
  */
-export default function removeConsolePlugin(options: { include?: string[], fileRegex?: RegExp } = { include: ['/src/'], fileRegex: /\.(?:[tj]sx?|vue)$/ }) {
+export default function removeConsolePlugin(options: { include?: string[]; fileRegex?: RegExp } = { include: ['/src/'], fileRegex: /\.(?:[tj]sx?|vue)$/ }) {
   const includePatterns = options.include || ['/src/'];
   const fileRegex = options.fileRegex || /\.(?:[tj]sx?|vue)$/;
 
@@ -73,7 +72,7 @@ export default function removeConsolePlugin(options: { include?: string[], fileR
     },
     async load(id: string) {
       const url = id;
-      const shouldProcess = includePatterns.some(pattern => url.includes(pattern));
+      const shouldProcess = includePatterns.some((pattern) => url.includes(pattern));
       if (shouldProcess && fileRegex.test(url) && isDev) {
         const blameOutput = (await execCommand(`git blame ${id}`)) as string;
 
