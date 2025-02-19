@@ -2,7 +2,7 @@
 
 ## What's the use of it?
 
-Identifies the current git user and removes console.log other users.
+In the development environment, identify the current git user and remove the console.log of other users.
 
 ## How to use?
 
