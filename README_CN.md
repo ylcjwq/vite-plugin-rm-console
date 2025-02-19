@@ -1,5 +1,9 @@
 # vite-plugin-rm-console
 
+<p align="center">
+  <a style="color: #ccc;" href="./README_CN.md">中文</a> | <a href="./README.md">English</a>
+</p>
+
 ## 用途
 
 在开发环境中，识别当前 git 用户，移除其他用户的 console.log。
