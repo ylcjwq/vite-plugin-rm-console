@@ -1,5 +1,5 @@
 {
-  "name": "@packages/plugin",
+  "name": "vite-plugin-rm-console",
   "type": "module",
   "version": "0.0.6",
   "description": "plugin",
